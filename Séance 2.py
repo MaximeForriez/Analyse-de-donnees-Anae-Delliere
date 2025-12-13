@@ -78,7 +78,7 @@ for i in range(len(contenu)):
     
     valeurs = [blancs, nuls, exprimes, abstentions]
     categories = ["Blancs", "Nuls", "Exprimés", "Abstentions"]
-    couleurs = ["lightgrey", "red", "green", "blue"]  # palette personnalisée
+    couleurs = ["lightgrey", "red", "green", "blue"]  
 
 
  # Création du diagramme circulaire
