@@ -16,7 +16,7 @@ print(contenu)
 # 3. Isoler la colonne "Surface (km2)"
 surfaces = contenu["Surface (km²)"].astype(float).tolist()
 
-# Ajouter les nouvelles valeurs (sans unité, castées en float)
+# Ajouter les nouvelles valeurs 
 surfaces.extend([
     float(85545323),  # Asie / Afrique / Europe
     float(37856841),  # Amérique
@@ -131,8 +131,6 @@ for etat, rang_pop, rang_dens in comparaison:
 
 print("\nColonne Pop :", colonne_pop)
 print("Colonne Dens :", colonne_dens)
-
-from scipy.stats import spearmanr, kendalltau
 
 
 #14 Calcul du coefficient de corrélation de Spearman
