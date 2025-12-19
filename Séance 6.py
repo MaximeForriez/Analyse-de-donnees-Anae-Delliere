@@ -80,10 +80,7 @@ donnees = {col: contenu[col].astype(float).tolist() if col != "État" else conte
 
 #11 Fonction locale : prend une liste de valeurs et la liste des États associée
 def ordrePopulation(valeurs, etats):
-    # zip associe chaque valeur à son État
-    # sorted trie par valeur décroissante
     tri = sorted(zip(valeurs, etats), key=lambda x: x[0], reverse=True)
-    # On sépare à nouveau en deux listes
     valeurs_triees, etats_tries = zip(*tri)
     return list(valeurs_triees), list(etats_tries)
 
